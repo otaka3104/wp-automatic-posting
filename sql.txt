@@ -1,0 +1,13 @@
+CREATE TABLE `automatic_posting` (
+	`id` MEDIUMINT(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` TEXT NOT NULL,
+	`Destinations` TEXT NOT NULL
+);
+
+データインサート
+INSERT INTO automatic_posting (`name`, `Destinations`) VALUES ("投稿記事", "twitter");
+
+アップデート
+UPDATE `automatic_posting`
+SET `name`= ""
+WHERE `id` = 1;
